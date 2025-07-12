@@ -46,3 +46,5 @@ example:
 - [ ] Pickups (interacting with stuff)
 - [ ] Simple UI (HUD, like health bar etc... needs to be discussed)
 ---
+
+git repo protection test
