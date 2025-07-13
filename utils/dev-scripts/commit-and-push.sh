@@ -32,6 +32,3 @@ echo "🚀 Pushing to origin/$BRANCH_NAME..."
 git push origin "$BRANCH_NAME"
 
 echo "✅ Rebase and push complete."
-
-
-#test if commit-and-push.sh is working
