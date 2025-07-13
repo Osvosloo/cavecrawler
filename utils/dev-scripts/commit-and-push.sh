@@ -12,9 +12,15 @@ fi
 COMMIT_MSG="$1"
 BRANCH_NAME="${2:-$(git rev-parse --abbrev-ref HEAD)}"
 
+echo "🔄 Stashing changes..."
+git stash
+
 echo "🔄 Rebasing onto origin/main..."
 git fetch origin
 git rebase origin/main || exit 1
+
+echo "🔄 Popping changes..."
+git stash pop
 
 echo "➕ Staging changes..."
 git add .
@@ -26,3 +32,6 @@ echo "🚀 Pushing to origin/$BRANCH_NAME..."
 git push origin "$BRANCH_NAME"
 
 echo "✅ Rebase and push complete."
+
+
+#test if commit-and-push.sh is working
