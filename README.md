@@ -1,10 +1,7 @@
 # 🕳️ Cave Crawler (2D)
 
-Tiny 2D cave game we’re building in Unity — explore, solve stuff, find treasure.
 
----
-
-## 🔧 Setup
+## Dev Setup
 
 1. Install **Unity 2022.3 LTS** (via Unity Hub)
 2. Clone the repo:
@@ -15,16 +12,10 @@ Tiny 2D cave game we’re building in Unity — explore, solve stuff, find treas
 
 ---
 
-## 🗂️ Folders 
-
-- (will be elaborated on)
----
-
-## Git feature rules
-
+## Git feature branch rules
 - Make a new branch:
   ```bash
-  git checkout -b your-feature-name
+  git checkout -b <branch-name>
   ```
 - Commit:
   ```bash
@@ -32,7 +23,7 @@ Tiny 2D cave game we’re building in Unity — explore, solve stuff, find treas
   ```
 - Push:
   ```bash
-  git push origin your-feature-name
+  git push origin <branch-name>
   ```
 
 ---
